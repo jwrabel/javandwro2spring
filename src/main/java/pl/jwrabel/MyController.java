@@ -93,5 +93,13 @@ public class MyController {
 	}
 
 
+	@RequestMapping(method = RequestMethod.POST, value = "/createPoint2")
+	@ResponseBody
+	public String createPoint2(@RequestBody Point point) {
+		System.out.println(point);
+		return "Point created";
+	}
+
+
 
 }
